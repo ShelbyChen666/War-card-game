@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/table1.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+
+main {
+    width: 80vw;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    color: black;
+    /* background-color: rgb(254, 231, 235); */
+    background: rgb(254, 231, 235); /* fallback for old browsers */
+    background: -webkit-linear-gradient(rgb(250, 187, 198), #f4e2d8); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(rgb(250, 187, 198), #f4e2d8);
+    /* #ba5370, */
+    border-radius: 10px;
+}
+
+#header{
+    margin: 0;
+    font-family: 'Cinzel Decorative', cursive, sans-serif;
+    font-size: 2rem;
+}
+
+#computer-score{
+    margin: 0 0 0.8rem;
+}
+
+#my-score{
+    margin: 0.8rem;
+}
+
+button {
+    background-color: hwb(326 37% 33%);
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 0.5em;
+    font-size:1.2rem;
+    border-radius: inherit;
+    box-shadow: 3px 2px 3px hsl(326, 48%, 36%);
+
+}
+
+button#new-deck {
+    margin: 10px 10px 0;
+    border-radius: 10px;
+}
+
+button.draw {
+    align-self: stretch;
+    margin: 0 10px 10px;
+}
+
+button:hover, button:focus, button:active {
+    transform: translateY(3px);
+}
+
+
+div.card-slot {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: clamp(85px, 15vw, 140px);
+    height: clamp(calc(85px * 7.3/ 5), calc(15vw * 7.3/ 5), calc(140px * 7.3/ 5));
+    background-image: url(img/Card_back.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 4px 3px 3px hsl(326, 48%, 36%);
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 1em;
+}
+
+img.card {
+    width: 100%;
+    height: 100%;
+}
+
+div.top {
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+div.top > p {
+    margin-left: 10px;
+    font-style: oblique;
+
+}
+
+button:disabled {
+    cursor: not-allowed;
+    color: rgb(227, 192, 198);
+}
+
+h2 {
+    margin: 10px;
+}
