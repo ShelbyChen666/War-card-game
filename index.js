@@ -48,7 +48,7 @@ drawCardBtn.addEventListener("click", () => {
             if (data.remaining === 0) {
                 drawCardBtn.disabled = true
                 if (computerScore > myScore) {
-                    header.textContent = "The computer won the game!"
+                    header.textContent = "Oops..You lost!!"
                 } else if (myScore > computerScore) {
                     header.textContent = "Congratulation!🎊"
                 } else {
@@ -68,11 +68,11 @@ function determineCardWinner(card1, card2) {
     if (card1ValueIndex > card2ValueIndex) {
         computerScore++
         computerScoreEl.textContent = `Computer score: ${computerScore}`
-        return "Come on!"
+        return "Keep battling!"
     } else if (card1ValueIndex < card2ValueIndex) {
         myScore++
         myScoreEl.textContent = `My score: ${myScore}`
-        return "great!"
+        return "Great job!"
     } else {
         return "War!"
     }

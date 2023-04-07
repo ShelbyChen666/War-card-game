@@ -69,8 +69,9 @@ button.draw {
     margin: 0 10px 10px;
 }
 
-button:hover, button:focus, button:active {
+button:hover, button:active {
     transform: translateY(3px);
+    background-color: palevioletred;
 }
 
 
