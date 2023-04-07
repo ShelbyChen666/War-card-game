@@ -48,9 +48,9 @@ drawCardBtn.addEventListener("click", () => {
             if (data.remaining === 0) {
                 drawCardBtn.disabled = true
                 if (computerScore > myScore) {
-                    header.textContent = "Oops..You lost!!"
+                    header.textContent = "Oops..You lost!!🥹"
                 } else if (myScore > computerScore) {
-                    header.textContent = "Congratulation!🎊"
+                    header.textContent = "Congratulation!!🥳"
                 } else {
                     header.textContent = "It's a tie game!"
                 }
